@@ -134,6 +134,7 @@ border-radius: 30px;
 
 
 
+
 }
 
 /* navbar ended */
@@ -423,6 +424,15 @@ font-weight: 600;
 }
 
 
+
+.container-for-btn{
+display: flex;
+justify-content: flex-end;
+
+
+
+}
+
 /* sections for cards ended */
 
 
@@ -489,7 +499,108 @@ width: 100%;
   }
 }
 
-
-
-
 /* cards section for resposive ended */
+
+
+
+
+   /* footer section :started */
+    .foter-sec{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 80px;
+      margin-top: 50px;
+    }
+.foter-img img{
+  width: 406px;
+}
+
+
+
+
+
+
+    .socail-img img{
+      width: 300px;
+      background-color: var(--antiquewhite);
+    }
+    .footer-head{
+      font-size: 4rem;
+      color: var(--brown);
+    }
+    .para-for-apps{
+font-size: 1.5rem;
+color: var(--brown);
+    }
+
+    .container-for-link{
+      
+      height: 50px;
+      background-color: var(--darkbrown);
+      display: flex;
+      justify-content: center;
+     
+     
+    }
+    .app-link{
+      color: var(--brown);
+      margin-top: 20px;
+      background-color: var(--brown);
+      color: var(--white);
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 300;
+   
+     
+    }
+     .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color:var(--cream);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    
+      z-index: 1000;
+    }
+
+    .footer-item {
+      text-align: center;
+      font-size: 14px;
+      color:var(--gray);
+     
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .footer-item:hover {
+      color: var(--brown);
+    }
+
+    .footer-item i {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    /* footer section ended */
+
+
+
+    /* Responsive font/icon size */
+    @media (min-width: 600px) {
+      .footer-item {
+        font-size: 16px;
+        gap: 0px;
+      }
+      .footer-item i {
+        font-size: 22px;
+      }
+    }
+
+/* footer section responsive ended*/
+
