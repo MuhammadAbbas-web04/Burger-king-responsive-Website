@@ -56,12 +56,23 @@ background-color: var(--cream);
 
  /* navbar started  */
 
+
+
+
 .navbar-container{
 display: flex;
 justify-content: space-around;
 align-items: center;
-position: sticky;
-top: 1px;
+flex-wrap: wrap;
+border-bottom: 1px solid var(--brown);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--cream);
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 
 
 
@@ -147,7 +158,7 @@ justify-content: center;
 align-items: center;
 flex-direction: row-reverse;
 gap: 10px;
-
+margin-top: 40px;
 
 
 
@@ -265,6 +276,40 @@ margin-top: 10px;
   }
 
 
+@media(max-width:1024px){
+  .container-order{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-img {
+    width: 95%;
+    order: 1;
+  }
+
+
+  .order-btn {
+    margin-top: 30px;
+  }
+
+.order-para{
+font-size: 0.9rem;
+font-weight: 100;
+margin-top: 10px;
+
+
+
+}
+
+
+
+
+  }
+
+
+
+
+
 
 
 
@@ -293,6 +338,11 @@ margin-top: 10px;
 
 
 
+/* cards section for resposive started */
+
+
+
+
 
 
 .card-wrapper {
@@ -300,6 +350,7 @@ margin-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .card {
@@ -317,7 +368,7 @@ margin-top: 10px;
   transform: translateY(-5px);
 }
 
-.card img {
+.card-img {
   width: 100%;
   height: auto;
   display: block;
@@ -341,7 +392,7 @@ margin-top: 10px;
   color: #555;
 }
 
-.card button {
+.card-button{
   margin-top: 10px;
   background-color: #e31837;
   color: white;
@@ -358,10 +409,45 @@ margin-top: 10px;
 
 /* Responsive: Tablet */
 @media (max-width: 1240px) {
+
+.card-wrapper{
+width: 100%;
+
+
+
+}
+
+
+
   .card {
     width: 48%;
   }
 }
+
+@media (max-width: 935px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 876px) {
+  .card {
+    width: 85%;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
 
 /* Responsive: Mobile */
 @media (max-width: 640px) {
@@ -373,8 +459,13 @@ margin-top: 10px;
     padding: 15px;
   }
 
-  .card button {
+  .card-button {
     font-size: 14px;
     padding: 10px;
   }
 }
+
+
+
+
+/* cards section for resposive ended */
