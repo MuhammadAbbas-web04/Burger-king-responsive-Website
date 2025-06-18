@@ -50,6 +50,8 @@ background-color: var(--cream);
 --gray:#aea9a2;
 --white:#FFFFFF ;
 --red:#d62300;
+--Darkred:#a60505;
+--lightgray:#e3e1e1;
 
 
 }
@@ -224,9 +226,23 @@ color: var(--brown);
     url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.svg#Flame Bold")format("svg");
 
 
+}
 
+.Delivery-btn:hover{
+background-color: var(--lightgray);
+cursor: pointer;
 
 }
+
+
+
+.order-btn:hover{
+background-color: var(--Darkred);
+cursor: pointer;
+
+}
+
+
 
 .order-para{
 font-size: 0.9rem;
