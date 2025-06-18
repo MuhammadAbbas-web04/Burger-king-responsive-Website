@@ -291,7 +291,16 @@ margin-top: 10px;
 
   .order-btn {
     margin-top: 30px;
+    width: 100%;
   }
+
+.Delivery-btn{
+width: 100%;
+
+
+}
+
+
 
 .order-para{
 font-size: 0.9rem;
